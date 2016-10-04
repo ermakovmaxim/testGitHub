@@ -1,0 +1,17 @@
+[
+  {
+    "key"   : "CHV",
+    "value" : "Chivas",
+    "price" : "4000"
+  },
+  {
+    "key"   : "BLN",
+    "value" : "Balentines",
+    "price" : "3000"
+  },
+  {
+    "key"   : "BDG",
+    "value" : "Black Dog",
+    "price" : "1500"
+  }
+]

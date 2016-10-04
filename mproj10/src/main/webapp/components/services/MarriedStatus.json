@@ -1,0 +1,13 @@
+{
+  "radio" : "groupname",
+
+  "fields" : [{
+    "label" : "Married",
+    "value" : "Married"
+  },
+
+    {
+      "label" : "Unmarried",
+      "value" : "Unmarried"
+    }]
+}

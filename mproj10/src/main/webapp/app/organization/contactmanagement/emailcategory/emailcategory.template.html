@@ -1,0 +1,27 @@
+<div class="container-fluid" id="EmailCategory344">
+        <div class="card" id="Card524" style="background-color: #fefefe;" >
+    <div class="card-header primary-color white-text" >
+    EmailCategory
+    </div>
+    <div class="card-block" >
+            <form id="Form251" >
+            <div class="row" id="Row427" style="background-color: #fefefe;" >
+            <text-input [(ngModel)]="emailCategoryModel.emailCatName" name="emailCategoryModel.emailCatName" [widgetConfig]="emailCatName" [label]="'Email Category Name'" [column]="'6'" ></text-input>
+    </div>
+            <div class="row" id="Row558" style="background-color: #fefefe;" >
+            <hidden-input [(ngModel)]="emailCategoryModel.emailCatId" name="emailCategoryModel.emailCatId" [column]="'6'" ></hidden-input>
+            <hidden-input [(ngModel)]="emailCategoryModel.versionId" name="emailCategoryModel.versionId" [column]="'6'" ></hidden-input>
+    </div>
+            <div class="row" id="Row225" style="float: right;" >
+            <simple-button [widgetConfig]="save" [label]="'Save'" [column]="'3'" [buttonSize]="'btn-lg'" [buttonStyle]="'primary'" (onClick)="onSaveClick()" ></simple-button>
+            <simple-button [widgetConfig]="update" [label]="'Update'" [column]="'3'" [buttonSize]="'btn-lg'" [buttonStyle]="'primary'" (onClick)="onUpdateClick()" ></simple-button>
+            <simple-button [widgetConfig]="reset" [label]="'Reset'" [column]="'3'" [buttonSize]="'btn-lg'" [buttonStyle]="'primary'" (onClick)="onResetClick()" ></simple-button>
+    </div>
+            <div class="row" id="Row171" >
+            <data-grid [widgetConfig]="emailCategoryGrid" [title]="'Email Category List'" [column]="'12'" [clientSidePaging]="true" [pageSize]="50" [serviceurl] = "'secure/EmailCategory/findAll'" [methodType] = "'get'"  (rowData)="onEmailCategoryGridRowClick($event)" [localdata]="emailCategoryGridData" >
+    </data-grid>
+    </div>
+    </form>
+    </div>
+    </div>
+</div>

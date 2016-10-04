@@ -1,0 +1,26 @@
+[
+  {
+    "key"   : "CHV",
+    "value" : "Chivas",
+    "price" : "4000",
+    "tax"   : "1%"
+  },
+  {
+    "key"   : "BLN",
+    "value" : "Balentines",
+    "price" : "3000",
+    "tax"   : "12%"
+  },
+  {
+    "key"   : "BDG",
+    "value" : "Black Dog",
+    "price" : "1500",
+    "tax"   : "8%"
+  },
+  {
+    "key"   : "BP",
+    "value" : "Blenders Pride",
+    "price" : "800",
+    "tax"   : "5%"
+  }
+]

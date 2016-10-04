@@ -1,0 +1,21 @@
+{
+  "checkbox1" : "groupname",
+
+  "checkboxFields" : [{
+    "label" : "C",
+    "value" : "C"
+  },
+    {
+      "label" : "C++",
+      "value" : "C++"
+    },
+    {
+      "label" : "JAVA",
+      "value" : "JAVA"
+    },
+    {
+      "label" : ".NET",
+      "value" : ".NET"
+    }
+  ]
+}

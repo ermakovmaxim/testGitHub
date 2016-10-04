@@ -1,0 +1,27 @@
+<div class="container-fluid" id="Title280">
+        <div class="card" id="Card865" style="background-color: #fefefe;" >
+    <div class="card-header primary-color white-text" >
+    Title
+    </div>
+    <div class="card-block" >
+            <form id="Form919" >
+            <div class="row" id="Row510" style="background-color: #fefefe;" >
+            <text-input [(ngModel)]="titleModel.titles" name="titleModel.titles" [widgetConfig]="titles" [label]="'Title'" [column]="'6'" ></text-input>
+    </div>
+            <div class="row" id="Row353" style="background-color: #fefefe;" >
+            <hidden-input [(ngModel)]="titleModel.titleId" name="titleModel.titleId" [column]="'6'" ></hidden-input>
+            <hidden-input [(ngModel)]="titleModel.versionId" name="titleModel.versionId" [column]="'6'" ></hidden-input>
+    </div>
+            <div class="row" id="Row714" style="float: right;" >
+            <simple-button [widgetConfig]="save" [label]="'Save'" [column]="'3'" [buttonSize]="'btn-lg'" [buttonStyle]="'primary'" (onClick)="onSaveClick()" ></simple-button>
+            <simple-button [widgetConfig]="update" [label]="'Update'" [column]="'3'" [buttonSize]="'btn-lg'" [buttonStyle]="'primary'" (onClick)="onUpdateClick()" ></simple-button>
+            <simple-button [widgetConfig]="reset" [label]="'Reset'" [column]="'3'" [buttonSize]="'btn-lg'" [buttonStyle]="'primary'" (onClick)="onResetClick()" ></simple-button>
+    </div>
+            <div class="row" id="Row222" >
+            <data-grid [widgetConfig]="titleGrid" [title]="'Title List'" [column]="'12'" [clientSidePaging]="true" [pageSize]="50" [serviceurl] = "'secure/Title/findAll'" [methodType] = "'get'"  (rowData)="onTitleGridRowClick($event)" [localdata]="titleGridData" >
+    </data-grid>
+    </div>
+    </form>
+    </div>
+    </div>
+</div>
