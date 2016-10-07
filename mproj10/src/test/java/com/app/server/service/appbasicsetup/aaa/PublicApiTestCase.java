@@ -154,6 +154,7 @@ public class PublicApiTestCase extends EntityTestCriteria {
     @Test
     public void test1Save() {
         try {
+	    System.out.println("Hello");
             PublicApi publicapi = createPublicApi(true);
             publicapi.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);
             publicapi.isValid();
